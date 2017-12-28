@@ -28,10 +28,13 @@ LOCAL_SRC_FILES := \
 # terminator
 
 LOCAL_C_INCLUDES += \
+	frameworks/av/include \
 	frameworks/base/include \
+	frameworks/native/libs/binder/include \
 	hardware/libhardware/include \
 	system/core/include \
 	system/core/base/include \
+	system/media/audio/include \
 	system/media/audio_effects/include \
 # terminator
 
@@ -52,7 +55,7 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE_CLASS := ETC
 
-LOCAL_MODULE_PATH := $(TARGET_OUT)/vendor/etc
+LOCAL_MODULE_PATH := $(TARGET_COPY_OUT_VENDOR)/etc
 
 include $(BUILD_PREBUILT)
 endif
